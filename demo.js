@@ -1,11 +1,14 @@
-var YZClient = require('yz-open-sdk-nodejs');
-var Token = require('./node_modules/yz-open-sdk-nodejs/Token');
+import {
+  YZClient,
+  Sign,
+  Token
+} from "al-open-sdk-nodejs"
 
-var YZClient = new YZClient(new Token('xx'));
+const client1 = new YZClient(new Token("token"))
+const client2 = new YZClient(new Sign("key","secret"))
 
-var promise = YZClient.invoke('kdt.shop.basic.get', '1.0.0', 'GET');
-
-promise.then(function(resp) {
+client2.invoke('kdt.shop.basic.get', '1.0.0', 'GET')
+.then(function(resp) {
 	console.log('resp: ' + resp.body);
 	var data = JSON.parse(resp.body);
 	console.log(data.response.item.num_iid);
