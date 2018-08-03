@@ -1,0 +1,26 @@
+{
+  "name": "yz-open-sdk-nodejs",
+  "version": "1.0.2",
+  "description": "Youzan open sdk - NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zerozaki0752/yz-open-sdk-nodejs.git"
+  },
+  "author": "ph0ly",
+  "license": "ISC",
+  "dependencies": {
+    "form-data": "^2.1.2",
+    "hashmap": "^2.0.6",
+    "http": "0.0.0",
+    "md5": "^2.2.1",
+    "moment": "^2.17.1",
+    "q": "^1.4.1",
+    "request": "^2.79.0"
+  },
+  "_from": "yz-open-sdk-nodejs@1.0.2",
+  "_resolved": "http://registry.npm.taobao.org/yz-open-sdk-nodejs/download/yz-open-sdk-nodejs-1.0.2.tgz"
+}
